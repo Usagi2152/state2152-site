@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>State 2152</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #e0e4ea;
+      color: #1c1c1c;
+    }
+    header {
+      background-color: #1f3b73;
+      color: #ffffff;
+      padding: 20px;
+      text-align: center;
+    }
+    nav a {
+      color: #ffffff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      padding: 20px;
+    }
+    .tab {
+      display: none;
+    }
+    .tab-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    .tab-buttons button {
+      background-color: #1f3b73;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .tab-buttons button.active {
+      background-color: #365ea7;
+    }
+    .tab.active {
+      display: block;
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    section h2 {
+      color: #1f3b73;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+    }
+    thead {
+      background-color: #f2f2f2;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    details summary {
+      cursor: pointer;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    details p {
+      margin-left: 15px;
+      margin-top: 5px;
+      color: #444;
+    }
+    footer {
+      background-color: #1f3b73;
+      color: #ffffff;
+      text-align: center;
+      padding: 10px;
+    }
+    pre {
+      background-color: #f8f9fa;
+      padding: 10px;
+      border-radius: 5px;
+      overflow-x: auto;
+      white-space: pre-wrap;
+    }
+  </style>
+  <script>
+    function showTab(tabId) {
+      document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
+      document.querySelectorAll('.tab-buttons button').forEach(btn => btn.classList.remove('active'));
+      document.getElementById(tabId).classList.add('active');
+      document.querySelector(`[data-tab='${tabId}']`).classList.add('active');
+    }
+    document.addEventListener('DOMContentLoaded', () => showTab('home'));
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Welcome to State 2152</h1>
+    
+  </header>
+
+  <main>
+    <div class="tab-buttons">
+      <button data-tab="home" onclick="showTab('home')">Home</button>
+      <button data-tab="alliances" onclick="showTab('alliances')">Alliances</button>
+      <button data-tab="rules" onclick="showTab('rules')">Rules</button>
+      <button data-tab="events" onclick="showTab('events')">Events</button>
+      <button data-tab="resolutions" onclick="showTab('resolutions')">Resolutions</button>
+      <button data-tab="contact" onclick="showTab('contact')">Contact</button>
+    </div>
+
+    <section id="home" class="tab">
+  <h2 style="font-size: 2.5em; margin-bottom: 20px;">Welcome to State 2152</h2>
+    <p style="font-size: 1.2em; line-height: 1.6;">This is the official site for NAP coordination of 2152</p>
+    </section>
+
+    <section id="alliances" class="tab">
+  <h2>NAP Alliances</h2>
+  <div style="overflow-x: auto;">
+    <table style="max-width: 700px; margin: 0 auto; width: 100%; border-collapse: collapse; text-align: left; border: 1px solid #c0d3ea; font-family: 'Segoe UI', sans-serif;">
+      <thead style="background-color:#e6f0fa;">
+        <tr>
+          <th style="padding: 10px; border: 1px solid #c0d3ea;">Alliance</th>
+          <th style="padding: 10px; border: 1px solid #c0d3ea;">Academy</th>
+          <th style="padding: 10px; border: 1px solid #c0d3ea;">Farm</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong style="color:#222;">WiC</strong></td>
+          <td style="color:#bbb;">N/A</td>
+          <td><em style="color:#3b7d2a;">HMB</em></td>
+        </tr>
+        <tr>
+          <td><strong style="color:#222;">UBB</strong></td>
+          <td><em style="color:#3a6ea5;">Drk</em></td>
+          <td><em style="color:#3b7d2a;">TIC</em></td>
+        </tr>
+        <tr>
+          <td><strong style="color:#222;">WTF</strong></td>
+          <td><em style="color:#3a6ea5;">WtF</em></td>
+          <td><em style="color:#3b7d2a;">KVP</em></td>
+        </tr>
+        <tr>
+          <td><strong style="color:#222;">LOL</strong></td>
+          <td style="color:#bbb;">N/A</td>
+          <td><em style="color:#3b7d2a;">CAT</em></td>
+        </tr>
+        <tr>
+          <td><strong style="color:#222;">WiT</strong></td>
+          <td><em style="color:#3a6ea5;">wit</em></td>
+          <td><em style="color:#3b7d2a;">wif</em></td>
+        </tr>
+        <tr>
+          <td><strong style="color:#222;">WOW</strong></td>
+          <td><em style="color:#3a6ea5;">W0W</em></td>
+          <td style="color:#bbb;">N/A</td>
+        </tr>
+        <tr>
+          <td><strong style="color:#222;">GrD</strong></td>
+          <td style="color:#bbb;">N/A</td>
+          <td style="color:#bbb;">N/A</td>
+        </tr>
+        <tr>
+          <td><strong style="color:#222;">BRR</strong></td>
+          <td style="color:#bbb;">N/A</td>
+          <td style="color:#bbb;">N/A</td>
+        </tr>
+        <tr>
+          <td><strong style="color:#222;">ONE</strong></td>
+          <td style="color:#bbb;">N/A</td>
+          <td style="color:#bbb;">N/A</td>
+        </tr>
+        <tr>
+          <td><strong style="color:#222;">WiV</strong></td>
+          <td style="color:#bbb;">N/A</td>
+          <td style="color:#bbb;">N/A</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+    </section>
+    <section id="rules" class="tab">
+      <h2>State Rules</h2>
+      <ul>
+        <li>No attacking or scouting members of NAP alliances.</li>
+        <li>No recruiting, soliciting, or advertising to NAP members.</li>
+        <li>No attacking gatherers on resource tiles.</li>
+        <li>No attacking cities during fortress, facility, or stronghold battles.</li>
+        <li>Burning headquarters or banners requires NAP10 approval.</li>
+        <li>No surrounding or blocking facilities, forts or strongholds. A single touch only.</li>
+        <li>Each alliance is allowed one protected farm or academy.</li>
+      </ul>
+      <h3>Addendum</h3>
+      <ul>
+        <li>Members can't drop alliances, break rules and rejoin any NAP alliance.</li>
+      </ul>
+      <p><strong>Penalties to Violation of Rules</strong><br>
+      <em>*Note: From 12-12-2024 rules.</em><br>
+      Individuals who violate NAP rules and hold an R4 rank or below will be required to attend a meeting involving both parties' Alliance R5 representatives before any acts of force or retaliation are initiated.</p>
+      <p><strong>Punishment</strong><br>
+      1st - warning<br>
+      2nd - rally or hit</p>
+    </section>
+    <section id="events" class="tab">
+      <h2>Event-specific Rules</h2>
+      <details>
+  <summary><strong>Brothers In Arms (BiA) Rules – Updated 29-04-2025</strong></summary>
+
+  <p><strong>Allowed:</strong></p>
+  <ul>
+    <li>✅ Attacking gathering tiles</li>
+    <li>✅ Attacking non-NAP cities</li>
+    <li>✅ Attacking non-NAP banners</li>
+    <li>✅ Attacking non-NAP HQs</li>
+  </ul>
+
+  <p><strong>Not Allowed:</strong></p>
+  <ul>
+    <li>❌ Attacking NAP cities</li>
+    <li>❌ Attacking NAP banners</li>
+    <li>❌ Attacking NAP HQs</li>
+  </ul>
+
+  <p><em>Note: Each NAP alliance may designate one protected farm and/or academy.</em></p>
+
+  <p><strong>Linked Resolution:</strong><br>
+    See <a href="#bia-04-29-2025"><strong>04-29-2025:</strong> Resolution on Changing BiA Rules</a> for full vote details.
+  </p>
+</details>
+      <details>
+        <summary>Fortress/Stronghold Battles</summary>
+        <p><strong>As of 2025-03-13</strong></p>
+        <pre>
+FORTRESS/STRONGHOLD S2 PHASE 8/8
+Fort 1  - *Free        Fort 7  - WOW
+Fort 2  - LOL          Fort 8  - WTF
+Fort 3  - GrD          Fort 9  - UBB
+Fort 4  - BRR          Fort 10 - WiC
+Fort 5  - WiV          Fort 11 - WiT
+Fort 6  - *Free        Fort 12 - ONE
+
+SH 1 - UBB
+SH 2 - LOL, BRR
+SH 3 - WiC
+SH 4 - WTF
+        </pre>
+        <p><strong>03-16-2025 - Revised Rules on Fortress Claims/Assignments:</strong></p>
+        <ul>
+          <li>Each alliance may capture <strong>1 Fortress and 1 Stronghold</strong></li>
+          <li><strong>OR</strong> 2 Forts — one assigned and one won from the free fortresses in battle</li>
+          <li>If an alliance wins a second Fortress, it <strong>forfeits its claim or right to battle for a Stronghold</strong></li>
+          <li>Alliances must <strong>inform NAP leadership</strong> in advance of their intentions</li>
+        </ul>
+      </details>
+      <details>
+        <summary>Sunfire Castle Battles</summary>
+        <p><strong>Sunfire Castle Battle Protocol</strong> (as of latest agreement)</p>
+        <p>It has been agreed that the <strong>Sunfire Castle Presidency</strong> will rotate among the NAP10 alliances in accordance with the established alliance power rankings.</p>
+        <p><strong>Castle Battle Procedure</strong><br>
+        At the beginning of each Castle Battle period, the alliance scheduled for the next presidency shall be granted <strong>75–80 minutes</strong> to garrison the castle. Following this, <strong>25 minutes</strong> will be allocated for other NAP10 alliances to take over the garrison.</p>
+        <ul>
+          <li>Only transition rallies are permitted when handing off castle control between alliances.</li>
+          <li>No other rallies targeting the castle center are allowed while held by a NAP10 alliance.</li>
+          <li>Individual chiefs may launch solo attacks to earn battle points.</li>
+          <li>Alliances may alternate rallying and garrisoning the Castle Turrets.</li>
+        </ul>
+        <p><em>Note: This protocol is under review following active discussions among NAP leadership regarding potential adjustments.</em></p>
+
+        <h4>Sunfire Castle Presidential Tenures (2025)</h4>
+        <table>
+          <thead>
+            <tr><th>Date</th><th>Alliance</th><th>President Appointed</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Jan 23, 2025</td><td>WiC</td><td>Sekuli</td></tr>
+            <tr><td>Feb 01, 2025</td><td>VIP (now WTF)</td><td>Pinky</td></tr>
+            <tr><td>Feb 15, 2025</td><td>TAS (now UBB)</td><td>Sakai</td></tr>
+            <tr><td>Mar 01, 2025</td><td>LOL</td><td>Min Yoonji</td></tr>
+            <tr><td>Mar 15, 2025</td><td>WOW</td><td>Swiss Punisher</td></tr>
+            <tr><td>Mar 29, 2025</td><td>WiT</td><td>King Thorn VI</td></tr>
+            <tr><td>Apr 12, 2025</td><td>GrD</td><td>Hulk</td></tr>
+            <tr><td>Apr 26, 2025</td><td>HSO (Invader)</td><td>[HSO]Godly</td></tr>
+          </tbody>
+        </table>
+      </details>
+    </section>
+    <section id="resolutions" class="tab">
+  <h2>Resolutions</h2>
+  <details>
+  <summary><strong>05-09-2025:</strong> Castle Battle – 3-Hour Control Proposal</summary>
+
+  <p><strong>Proposal:</strong><br>
+    Should we have BRR(and other alliances next in the Castle presidency rotation) hold Castle with whales for 3 hours of Castle Battle instead of rotation?
+  </p>
+
+  <p><strong>Votes:</strong></p>
+  <pre style="line-height: 1.6;">
+WiC: yes              GRD: yes
+UBB: (not stated)     BRR:(not stated)
+WTF: yes              OnE: yes
+LOL: (not stated)     WiV: yes
+WiT: yes              WOW: yes
+  </pre>
+  <p><strong>Conclusion:</strong></p>
+  <ul>
+    <li>The proposal has passed with 7 confirmed votes.</li>
+    <li><strong>Effective from 05-10-2025:</strong></li>
+    <li>1. Castle control rotation is suspended.</li>
+    <li>2. The alliance next in line for Castle presidency will hold the Castle for the first 3 hours, with support from whales of other NAP alliances.</li>
+    <li>3. Solo attacks on the Castle are allowed throughout the Sunfire Castle Battle.</li>
+    <li>4. Other alliances may launch rallies for <strong>turrets only</strong>.</li>
+  </ul>
+
+</details>
+
+  <details id="bia-04-29-2025">
+    <summary><strong>04-29-2025:</strong> Resolution on Changing BiA Rules</summary>
+    <p>A vote was held to determine whether the current Brothers In Arms (BiA) rules regarding attacks on non-NAP alliances should be changed.</p>
+
+    <p><strong>Proposal:</strong><br>
+    Allow attacks on any non-NAP city, banner, HQ, or gatherer.<br>
+    <em>Note: Academy and Alliance Farms are excluded. Each NAP alliance may designate one academy and one farm.</em></p>
+
+    <p><strong>Voting Options:</strong></p>
+    <ul>
+      <li><strong>Option 0</strong> – Keep current BiA rule</li>
+      <li><strong>Option 1</strong> – Change BiA rule only</li>
+      <li><strong>Option 2</strong> – Implement new state-wide rule</li>
+      <li><strong>Option 3</strong> – New state-wide rule with additional restrictions (e.g., based on furnace level)</li>
+    </ul>
+
+    <p><strong>Votes Received:</strong></p>
+    <ul>
+      <li>LOL: No vote</li>
+      <li>WTF: 1</li>
+      <li>UBB: No Vote</li>
+      <li>WOW: 1</li>
+      <li>BRR: 1</li>
+      <li>WiC: 1</li>
+      <li>OnE: 1</li>
+      <li>WiT: 1</li>
+      <li>GrD: No Vote</li>
+      <li>WiV: 1</li>
+    </ul>
+
+    <p><strong>Result:</strong><br>
+    <strong>Option 1</strong> won with <strong>7 registered votes</strong>.</p>
+
+    <p><strong>Final Decision:</strong><br>
+    The BiA rules were changed to allow attacks on non-NAP cities, banners, HQs, and gatherers. Academy and alliance farms remain protected under NAP.</p>
+    <p><strong>Reference Image:</strong></p>
+    <img src="/mnt/data/Screenshot_20250509_060809_Whiteout Survival.jpg" alt="BiA Rule Change Vote Result 04-29-2025" style="max-width:100%; border: 1px solid #ccc; border-radius: 6px;">
+  </details>
+  <details>
+    <summary><strong>03-13-2025:</strong> In the matter of Retaining or Changing Brothers In Arms (BiA) Rules</summary>
+    <p><strong>Voting Options:</strong></p>
+    <ul>
+      <li><strong>Option A - Retain current BiA rules:</strong><br>
+        ❌ No City attacks, even without any alliance affiliation<br>
+        ✅ Attack allowed on gathering tiles / occupied / all tiles
+      </li>
+      <br>
+      <li><strong>Option B - Change BiA rules to:</strong><br>
+        ✅ Attack allowed on cities without any alliance affiliation<br>
+        ✅ Attack allowed on gathering tiles / occupied / all tiles
+      </li>
+    </ul>
+
+    <p><strong>Votes:</strong> (as of 2025-03-12)</p>
+    <ul>
+      <li>VIP = B</li>
+      <li>TAS = (not stated)</li>
+      <li>WIC = B</li>
+      <li>LOL = B</li>
+      <li>WOW = B</li>
+      <li>WiT = B</li>
+      <li>GrD = (not stated)</li>
+      <li>BRR = (not stated)</li>
+      <li>OnE = B</li>
+      <li>WIV = B</li>
+    </ul>
+
+    <p><strong>Result:</strong><br>
+    Votes passed to <strong>CHANGE</strong> BiA Rules to Option B.</p>
+
+    <p><strong>New Rules:</strong><br>
+      ✅ Attack allowed on cities without any alliance affiliation<br>
+      ✅ Attack allowed on gathering tiles / occupied / all tiles
+    </p>
+  </details>
+  <details>
+    <summary><strong>02-13-2025:</strong> Transferring alliances to fight facilities, forts and strongholds is NOT ALLOWED</summary>
+    <p><strong>Should transferring alliances to fight facilities, forts and strongholds be allowed?</strong></p>
+    
+    <ul>
+      <li>WIC – No</li>
+      <li>VIP – No</li>
+      <li>TAS – (not stated)</li>
+      <li>LOL – (not stated)</li>
+      <li>WOW – No</li>
+      <li>WiT – (not stated)</li>
+      <li>GrD – No</li>
+      <li>KVP – No</li>
+      <li>OnE – No</li>
+      <li>BRR – No</li>
+    </ul>
+
+    <p><strong>Vote Tally:</strong><br>
+      Yes – 0<br>
+      No – 7<br>
+      No vote / abstain / recused – 3<br>
+      <em>*Votes recorded as of 2025-02-13 22:40</em>
+    </p>
+
+    <p><strong>Discussion Points:</strong></p>
+    <ul>
+      <li><strong>[WiT]Peter Brock:</strong> Surprise transfers are not good for the state. Transfers should only happen if under attack and the facility is stronger. Should not be allowed for Castle battles.</li>
+      <li><strong>[TAS]VengeanceX:</strong> I don’t like alliance jumping.</li>
+      <li><strong>[WiC]Sekuli:</strong>
+        <ul>
+          <li>WiC only transfers with WiT, their extended alliance, and only for fair fights.</li>
+          <li>This vote is meant to prevent strong players from weakening NAP by joining non-NAP alliances.</li>
+          <li>Inactive small alliances hurt the state more than they help.</li>
+        </ul>
+      </li>
+    </ul>
+  </details>
+  <details>
+    <summary><strong>02-02-2025:</strong> In the matter of reinstating VIP into NAP10</summary>
+    <p>
+      In relation to the Sunfire Castle battle, wherein VIP — previously excluded from NAP — was due to participate in the Castle presidency rotation, a vote was held to reinstate VIP into NAP10.<br><br>
+      VIP had earlier been removed from NAP due to attacks on TAS cities and multiple alliances.
+    </p>
+
+    <p><strong>Vote Results:</strong></p>
+    <ul>
+      <li>LOL - yes</li>
+      <li>TAS - no</li>
+      <li>KVP - yes</li>
+      <li>WiC - yes</li>
+      <li>WiT - yes</li>
+      <li>GrD - yes</li>
+      <li>OnE - (no vote)</li>
+      <li>WOW - (no vote)</li>
+      <li>BRR - (no vote)</li>
+    </ul>
+
+    <p><strong>Total Tally:</strong><br>
+    YES - 5<br>
+    NO - 1<br>
+    No vote / abstained / recused - 3</p>
+
+    <p><strong>Discussion Points:</strong></p>
+    <ul>
+      <li>DrK will be removed from NAP10 - Squishy</li>
+      <li>Farm alliances are never included in NAP - Scotty</li>
+      <li>The 11th alliance was only ever included in the case of a tie - Sekuli</li>
+      <li>If vote doesn't pass, the 11th alliance will be included in NAP - Sekuli</li>
+    </ul>
+  </details>
+   <details>
+    <summary><strong>02-06-2025:</strong> Re: SVS Supreme Presidency</summary>
+    <p><strong>How will SVS Supreme Presidency be decided?</strong></p>
+    <ol>
+      <li>Based on preparation participation</li>
+      <li>Based on strength of a fortress battle</li>
+    </ol>
+
+    <p><strong>Alliance Votes:</strong></p>
+    <ul>
+      <li>WIC – Option 1</li>
+      <li>VIP – Option 1</li>
+      <li>TAS – Option 2</li>
+      <li>LOL – Option 1</li>
+      <li>WOW – No vote</li>
+      <li>WiT – Option 1</li>
+      <li>GrD – Option 1</li>
+      <li>OnE – No vote</li>
+      <li>KVP – Option 1</li>
+      <li>BRR – No vote</li>
+    </ul>
+
+    <p><strong>Vote Tally:</strong><br>
+      Option 1: 5 votes<br>
+      Option 2: 1 vote<br>
+      No vote / abstain / recused: 3<br>
+      <em>*Votes recorded as of 2025-02-06</em>
+    </p>
+
+    <p><strong>Resolution:</strong><br>
+      SVS Presidency will be decided based on preparation participation.
+    </p>
+  </details>
+  
+  
+</section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 State 2152. All rights reserved.</p>
+  </footer>
+</body>
+</html>
